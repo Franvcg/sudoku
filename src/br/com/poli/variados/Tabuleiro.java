@@ -145,7 +145,7 @@ public class Tabuleiro implements ResolvedorSudoku {
 		int[] valoresValidos = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		int valorX = linha;
 		int valorY = coluna;
-		int valorAuxMutavel1 = 0;
+		int valorAuxMutavel1 = 0;  //teste
 		int valorAuxMutavel2 = 0;
 
 		for (int i = 1; i < 9; i++) {
