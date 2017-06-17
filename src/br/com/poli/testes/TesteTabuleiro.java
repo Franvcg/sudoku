@@ -2,12 +2,13 @@ package br.com.poli.testes;
 
 import br.com.poli.exceptions.MovimentoIncorretoException;
 import br.com.poli.exceptions.MovimentoInvalidoException;
+import br.com.poli.exceptions.TabuleiroInvalidoException;
 import br.com.poli.variados.DificuldadePartida;
 import br.com.poli.variados.Tabuleiro;
 
 public class TesteTabuleiro {
 
-	public static void main(String[] args) throws MovimentoIncorretoException, MovimentoInvalidoException {
+	public static void main(String[] args) throws MovimentoIncorretoException, MovimentoInvalidoException, TabuleiroInvalidoException {
 
 		Tabuleiro tabuleiroTeste = new Tabuleiro();
 		

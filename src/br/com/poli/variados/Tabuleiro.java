@@ -4,6 +4,7 @@ import java.util.*;
 
 import br.com.poli.exceptions.MovimentoIncorretoException;
 import br.com.poli.exceptions.MovimentoInvalidoException;
+import br.com.poli.exceptions.TabuleiroInvalidoException;
 
 public class Tabuleiro implements ResolvedorSudoku {
 
@@ -139,7 +140,7 @@ public class Tabuleiro implements ResolvedorSudoku {
 	 * realizar novamente esse processo.
 	 * 
 	 */
-	public boolean resolveTabuleiro(int linha, int coluna) {
+	public boolean resolveTabuleiro(int linha, int coluna) throws TabuleiroInvalidoException {
 
 		Random r = new Random();
 		int[] valoresValidos = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -270,7 +271,7 @@ public class Tabuleiro implements ResolvedorSudoku {
 	 * geraTabuleiro e o executaMovimento
 	 * 
 	 */
-	public int[][] geraTabuleiro(DificuldadePartida partida) {
+	public int[][] geraTabuleiro(DificuldadePartida partida) throws TabuleiroInvalidoException {
 		grid = new int[9][9];
 		gabarito = new int[9][9];
 		resolveTabuleiro(0, 0);
